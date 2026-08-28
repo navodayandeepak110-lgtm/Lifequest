@@ -1,6 +1,6 @@
 LifeQuest 🎮
 
-A gamified habit-tracking app designed to turn daily habits and goals into an engaging personal quest.
+A gamified habit-tracking app designed to turn daily habits and goals into an engaging personal quest .
 
 🚀 Live App
 
