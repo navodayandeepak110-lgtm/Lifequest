@@ -7,7 +7,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Production
-dist/
+#dist/
 dist-ssr/
 *.local
 
