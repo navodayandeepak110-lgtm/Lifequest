@@ -1,0 +1,215 @@
+.goals-page {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.goals-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.goal-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.goal-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.goal-card.completed {
+  opacity: 0.7;
+}
+
+.goal-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.goal-type {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.goal-type.personal {
+  background: rgba(139, 92, 246, 0.2);
+  color: var(--accent-secondary);
+}
+
+.goal-type.health {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--accent-success);
+}
+
+.goal-type.learning {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--accent-primary);
+}
+
+.goal-type.career {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--accent-warning);
+}
+
+.goal-type.finance {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--accent-success);
+}
+
+.goal-type.fitness {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--accent-danger);
+}
+
+.goal-type.creative {
+  background: rgba(139, 92, 246, 0.2);
+  color: var(--accent-secondary);
+}
+
+.goal-type.social {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--accent-primary);
+}
+
+.goal-card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.goal-card-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.completed-checkmark {
+  font-size: 1.5rem;
+  color: var(--accent-success);
+}
+
+.goal-due-date {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.goal-due-date .overdue {
+  color: var(--accent-danger);
+  font-weight: 600;
+}
+
+.goal-progress {
+  margin-bottom: 1.5rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.progress-header span:first-child {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.progress-percent {
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, var(--accent-success), #059669);
+  color: white;
+}
+
+.btn-success:hover {
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  transform: translateY(-1px);
+}
+
+.form-range {
+  width: 100%;
+  height: 8px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--bg-tertiary);
+  border-radius: 999px;
+  outline: none;
+}
+
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+.form-range::-webkit-slider-thumb:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+.form-range::-moz-range-thumb:hover {
+  box-shadow: var(--shadow-glow);
+}
+
+@media (max-width: 768px) {
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .page-header .btn {
+    width: 100%;
+  }
+}
