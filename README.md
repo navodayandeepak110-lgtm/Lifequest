@@ -18,7 +18,7 @@ LifeQuest is a personal productivity and goal-tracking web application designed 
 
 🚀 Getting Started
 
-Clone this repository and open the project in your browser:https://navodayandeepak110-lgtm.github.io/Lifequest/
+open the project in your browser:https://navodayandeepak110-lgtm.github.io/Lifequest/
 
 git clone <your-repository-link>
 
